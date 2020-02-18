@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Katie and Bob Get Married</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Poiret+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <noscript>
+      <style>
+        .js-hidden {
+          display: block;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div class="kb-body">
+      <div class="kb-header">
+        <div class="top-text" onclick="showSection( 'home' );" style="cursor: pointer;">
+          Katie <span class="primary-text">&</span> Bob
+        </div>
+        <div class="bottom-text">
+          are getting married
+        </div>
+      </div>
+      <div class="kb-navbar">
+        <ul>
+          <li><a href="#wedding" onclick="showSection( 'wedding' ); return false;">Wedding</a></li>
+          <li><a href="#hotel" onclick="showSection( 'hotel' ); return false;">Hotel</a></li>
+          <li><a href="#registry" onclick="showSection( 'registry' ); return false;">Registry</a></li>
+          <li><a href="#activities" onclick="showSection( 'activities' ); return false;">Activities</a></li>
+        </ul>
+      </div>
+      <div class="kb-content">
+        <div id="home" class="content-home active">
+          <div class="image-banner">
+            <div class="banner-image"><img src="images/banner-king.png"></div>
+            <div class="banner-image"><img src="images/banner-viking.png"></div>
+            <div class="banner-image"><img src="images/banner-kissing.png"></div>
+            <div class="banner-image"><img src="images/banner-hugging.png"></div>
+          </div>
+          <h1>August 5th, 2017</h1>
+          <h2>Deansboro, NY</h2>
+        </div>
+        <div id="wedding" class="content-wedding js-hidden">
+          <div class="info-list">
+            <div class="header">Where</div>
+            <div class="info">
+              MKJ Farms (<a href="https://goo.gl/maps/2tt8KPf99dU2">map</a>)<br>
+              6844 W Hughes Rd, Deansboro, NY 13328<br>
+            </div>
+            <div class="header">When</div>
+            <div class="info">
+              August 5th, 2017<br/>
+              5pm
+            </div>
+            <div class="header">How</div>
+            <div class="info">
+              Shuttles will be leaving the Marriott Fairfield Inn and Suites, La Quinta, and Turning Stone Casino at 4pm.<br>
+              <br>
+              Parking is also available at the venue for those who wish to drive.
+            </div>
+          </div>
+        </div>
+        <div id="hotel" class="content-hotel js-hidden">
+          <h1 class="js-hidden"><u>Hotel</u></h1>
+          <div class="info-list">
+            <div class="info">
+              We have reserved a block of rooms at the Marriott Fairfield Inn & Suites Verona. The group rate should be $159 / night for a room with two queen beds or $169 / night for a king bed room.
+            </div>
+            <div class="subheader">
+              By Phone
+            </div>
+            <div class="info">
+              You may call them directly at (315) 363-8888 and mention you are with the Saris/Clifford wedding for a reduced rate.
+            </div>
+            <div class="subheader">
+              Online
+            </div>
+            <div class="info">
+              For a room with two queen beds ($159 / night) please click <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Saris%20Clifford%20Wedding%20Block%5Esyrvr%60SARSARA%60159.00%60USD%60false%604%608/4/17%608/6/17%607/4/17&app=resvlink&stop_mobi=yes">here</a>.<br/>
+              For a room with a single king bed ($169 / night) please click <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Saris%20Wedding%5Esyrvr%60SARSARB%60169.00%60USD%60false%602%608/4/17%608/6/17%607/4/17&app=resvlink&stop_mobi=yes">here</a>.<br/>
+            </div>
+            <div class="subheader">
+              Other Options
+            </div>
+            <div class="info">
+              We have been alerted that there is very limited availability left at the Marriott Fairfield Inn & Suites.<br>
+              <br>
+              If you are unable to book there, please click <a href="http://www.laquintaverona.com/">here</a> to book at La Quinta Verona which is within walking distance.
+            </div>
+          </div>
+        </div>
+        <div id="registry" class="content-registry js-hidden">
+          <h1 class="js-hidden"><u>Registry</u></h1>
+          <div class="info-list">
+            <div class="header">
+              We are registered at Amazon and Crate & Barrel
+            </div>
+            <div class="info">
+              <a href="http://www.crateandbarrel.com/gift-registry/katie-clifford/r5628233">
+                <img src="images/registry-crate-and-barrel.png" class="registry-logo">
+              </a>
+              <a href="https://www.amazon.com/wedding/katie-clifford-bob-saris-syracuse-september-2017/registry/7WCZ6THU3FSE">
+                <img src="images/registry-amazon.png" class="registry-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="activities" class="content-activities js-hidden">
+          <h1 class="js-hidden"><u>Activites</u></h1>
+          <div class="info-list">
+            <div class="header">
+              Friday Welcome Party / Sunday Brunch
+            </div>
+
+            <div class="info">
+              If you are getting in Friday or sticking around Sunday, please join us for events hosted by Ann Honebrink.<br>
+              Details and RSVP can be found <a href="https://www.evite.com/event/0353NEHMJZWBSISUOEPHLR7E62GWSQ/rsvp">here</a>.
+            </div>
+
+            <div class="header">
+              Things To Do
+            </div>
+
+            <div class="info">
+              Turning Stone (across from hotel)<br>
+              <a href="https://www.turningstone.com/">https://www.turningstone.com/</a><br>
+              Shuttle from the hotel to the casino - request at front desk<br>
+              Restaurants, casino, spa, golfing
+            </div>
+
+            <div class="info">
+              Sylvan Beach (Vienna NY)<br>
+              <a href="http://www.sylvanbeach.org/">http://www.sylvanbeach.org/</a><br>
+              Beach with old boardwalk
+            </div>
+
+            <div class="info">
+              Munson Williams Proctor Arts Institute (Utica NY)<br>
+              <a href="http://www.mwpai.org/">http://www.mwpai.org/</a>
+            </div>
+
+            <div class="info">
+              Saranac Brewery (Utica NY)<br>
+              <a href="https://www.saranac.com/tours/">https://www.saranac.com/tours/</a><br>
+              Fri and Sat tours at 1PM, 3PM, 5PM
+            </div>
+
+            <div class="info">
+              Adirondack distillery (Utica NY)<br>
+              <a href="http://www.adirondackdistilling.com/">http://www.adirondackdistilling.com/</a><br>
+              Tours are available by appointment Monday – Saturday (315-316-0387)
+            </div>
+
+            <div class="info">
+              Utica Zoo (Utica NY)<br>
+              <a href="http://uticazoo.org/">http://uticazoo.org/</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="lib/jquery-1.12.4.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="lib/hammer.min.js"></script>
+<script>
+  function showSection( section, direction ) {
+    var targetSection = "#" + section;
+    direction = direction || 'left';
+
+    if( $(".kb-content .active").length && !$(targetSection).hasClass( "active" ) ) {
+      $(".kb-content .active").removeClass( "active" ).hide( 'slide', {direction: direction}, 500, function() {
+        $(targetSection).addClass( "active" ).show( 'slide', {direction: (direction == 'right' ? 'left' : 'right')}, 500 );
+      });
+    }
+  }
+
+  function handleSwipe( direction ) {
+    if( $(".kb-content .active").length ) {
+      var currentSection = $('.kb-content .active');
+
+      if( direction == 'left' && currentSection.next().length ) {
+        showSection( currentSection.next()[0].id, 'left' );
+      } else if( direction == 'right' && currentSection.prev().length ) {
+        showSection( currentSection.prev()[0].id, 'right' );
+      }
+    }
+  }
+
+  $(document).ready( function() {
+    if( window.location.hash ) {
+      showSection( window.location.hash.slice( 1 ) );
+    }
+
+    var hammer = new Hammer( $('body')[0] );
+    hammer.on( 'swipeleft', function( event ) { handleSwipe( 'left' ) } );
+    hammer.on( 'swiperight', function( event ) { handleSwipe( 'right' ) } );
+  });
+</script>

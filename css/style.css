@@ -1,0 +1,169 @@
+html, body, .kb-body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #F6F7FC;
+  color: #444444;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header-text, h1, h2, h3, h4, h5, .kb-header, .kb-navbar, .kb-content .info-list .header, .kb-content .info-list .subheader, .content-home {
+  font-family: 'Poiret One', sans-sarif;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.image-banner {
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  text-align: center;
+}
+.image-banner .banner-image {
+  display: inline-block;
+  margin: 0 20px 20px;
+}
+@media (min-width: 885px) {
+  .image-banner .banner-image {
+    width: 20%;
+  }
+}
+@media (max-width: 885px) {
+  .image-banner .banner-image {
+    margin: 20px 0;
+    width: 80%;
+  }
+}
+.image-banner .banner-image img {
+  width: 100%;
+}
+@media (min-width: 885px) {
+  .image-banner .banner-image img {
+    max-width: 290px;
+  }
+}
+
+.primary-text {
+  color: #7C9790;
+}
+
+.accent-text {
+  color: #331225;
+}
+
+.kb-header {
+  height: 250px;
+  text-align: center;
+  background: url('../images/header-background.png') no-repeat center 0 fixed;
+  color: #331225;
+}
+@media (max-width: 700px) {
+  .kb-header {
+    background-size: auto;
+  }
+}
+@media (min-width: 700px) {
+  .kb-header {
+    background-size: 100%;
+  }
+}
+.kb-header .top-text {
+  padding-top: 75px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.kb-header .bottom-text {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.kb-navbar {
+  padding: 30px 0;
+}
+.kb-navbar ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+.kb-navbar ul li {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 18px;
+  border-color: #444444;
+  border-style: solid;
+  border-width: 0;
+  border-right-width: 1px;
+}
+.kb-navbar ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+.kb-navbar ul li a:hover {
+  text-decoration: underline;
+}
+.kb-navbar ul li:last-child {
+  border-right-width: 0;
+}
+
+.kb-content {
+  max-width: 900px;
+  margin: auto;
+}
+.kb-content .info-list {
+  text-align: center;
+}
+.kb-content .info-list .header {
+  font-size: 30px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+.kb-content .info-list .subheader {
+  font-size: 24px;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+.kb-content .info-list .info {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.js-hidden {
+  display: none;
+}
+
+.padded-content, .content-wedding, .content-hotel, .content-registry {
+  padding: 0 10px;
+}
+
+.content-home {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 885px) {
+  .content-home .image-banner {
+    order: 100;
+  }
+}
+
+.content-hotel .info-list {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content-registry .info-list img.registry-logo {
+  display: block;
+  width: 400px;
+  margin: 50px auto;
+}
